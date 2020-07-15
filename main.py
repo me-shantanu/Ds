@@ -1,7 +1,7 @@
 #import Section
-import SingleLL 
-import DoubleLL
-import CircularLL
+from LinkedList import SingleLL 
+from LinkedList import DoubleLL
+from LinkedList import CircularLL
 from Stack import stackusingarrayBasic
 from Stack import stackusingarrayoptimal
 from Stack import stackusinglinkedlist
