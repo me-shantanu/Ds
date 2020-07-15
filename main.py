@@ -2,6 +2,9 @@
 import SingleLL 
 import DoubleLL
 import CircularLL
+from Stack import stackusingarrayBasic
+from Stack import stackusingarrayoptimal
+from Stack import stackusinglinkedlist
 
 
 
@@ -234,6 +237,144 @@ while True:
                   break
                 else:
                   print("Please choose a valide option between 1-4 !! ")
+       elif First_input == 2:
+          while True:
+                print("---------------------------------------------------------------------------------")
+                print("Choose a option to play with stack !!")
+                print("---------------------------------------------------------------------------------")
+                print("---------------------------------------------------------------------------------")
+                print("1: Stack using Array")
+                print("2: Stack using Linked List")
+                print("3: Quite")
+                print("---------------------------------------------------------------------------------")
+                print("---------------------------------------------------------------------------------")
+                sec_s_input = int(input("Enter the Number !! "))
+                print("---------------------------------------------------------------------------------")
+                if sec_s_input == 1:
+                  while True:                    
+                    print("---------------------------------------------------------------------------------")
+                    print("We have two solution of stack using array !!")
+                    print("---------------------------------------------------------------------------------")
+                    print("---------------------------------------------------------------------------------")
+                    print("1: Simple Solution")
+                    print("2: Optimal Solution")
+                    print("3: Quite")
+                    print("---------------------------------------------------------------------------------")
+                    print("---------------------------------------------------------------------------------")
+                    s_use_array = int(input("Choose a option to play with stack using array !! "))
+                    print("---------------------------------------------------------------------------------")
+                    if s_use_array == 1:
+                      sto= stackusingarrayoptimal.stack()
+                      while True:
+                        print("---------------------------------------------------------------------------------")
+                        print("1: Push")
+                        print("2: Pop")
+                        print("3: Peek")
+                        print("4: Size")
+                        print("5: Display")
+                        print("6: Quit")
+                        print("---------------------------------------------------------------------------------")
+                        print("---------------------------------------------------------------------------------")
+                        s_use_array_optimal = int(input("Choose a option to play with stack !! "))
+                        print("---------------------------------------------------------------------------------")
+                        if s_use_array_optimal ==1:
+                          x = int(input("Enter a item for push "))
+                          sto.push(x)
+                        elif s_use_array_optimal ==2:
+                          x=sto.pop()
+                          print(x, " is poped from stack")
+                        elif s_use_array_optimal == 3:
+                          x = sto.peek()
+                          print(x," is the top most item of stack")
+                        elif s_use_array_optimal ==4:
+                          print("Size of the stack is ",sto.size())
+                        elif s_use_array_optimal ==5:
+                          sto.display()
+                        elif s_use_array_optimal ==6:
+                          break
+                        else:
+                          print("Please emter a valid number between [1-6] !! ")
+                    elif s_use_array == 2:
+                      st= stackusingarrayBasic.stack()
+                      while True:
+                        print("---------------------------------------------------------------------------------")
+                        print("1: Push")
+                        print("2: Pop")
+                        print("3: Peek")
+                        print("4: Size")
+                        print("5: Display")
+                        print("6: Quit")
+                        print("---------------------------------------------------------------------------------")
+                        print("---------------------------------------------------------------------------------")
+                        s_use_array_basic = int(input("Choose a option to play with stack !! "))
+                        print("---------------------------------------------------------------------------------")
+                        if s_use_array_basic ==1:
+                          x = int(input("Enter a item for push "))
+                          st.push(x)
+                        elif s_use_array_basic ==2:
+                          x=st.pop()
+                          print(x, " is poped from stack")
+                        elif s_use_array_basic == 3:
+                          x = st.peek()
+                          print(x," is the top most item of stack")
+                        elif s_use_array_basic ==4:
+                          print("Size of the stack is ",st.size())
+                        elif s_use_array_basic ==5:
+                          st.display()
+                        elif s_use_array_basic ==6:
+                          break
+                        else:
+                          print("Please emter a valid number between [1-6] !! ")
+                    elif s_use_array == 3:
+                      break
+                elif sec_s_input ==2:
+                  stl = stackusinglinkedlist.stack()
+                  while True:
+                    print("---------------------------------------------------------------------------------")
+                    print("1: Push")
+                    print("2: Pop")
+                    print("3: Peek")
+                    print("4: Size")
+                    print("5: Display")
+                    print("6: Quit")
+                    print("---------------------------------------------------------------------------------")
+                    print("---------------------------------------------------------------------------------")
+                    s_use_list = int(input("Choose a option to play with stack !! "))
+                    print("---------------------------------------------------------------------------------")
+                    if s_use_list ==1:
+                          x = int(input("Enter a item for push "))
+                          stl.push(x)
+                    elif s_use_list ==2:
+                          x=stl.pop()
+                          print(x, " is poped from stack")
+                    elif s_use_list == 3:
+                          x = stl.peek()
+                          print(x," is the top most item of stack")
+                    elif s_use_list ==4:
+                          print("Size of the stack is ",stl.size())
+                    elif s_use_list ==5:
+                          stl.display()
+                    elif s_use_list ==6:
+                          break
+                    else:
+                          print("Please emter a valid number between [1-6] !! ")
+                elif sec_s_input ==3:
+                  break
+       elif First_input ==3:
+         pass
+       elif First_input ==4:
+         pass
+       elif First_input ==5:
+         pass
+       elif First_input ==6:
+         pass
+       elif First_input ==7:
+          print("---------------------------------------------------------------------------------")
+          print("Thanks to Playing With Data Structures 🙂🙂🙂 ")
+          print("---------------------------------------------------------------------------------")
+          break
+
+          
 
 
                          
